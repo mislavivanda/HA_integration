@@ -1,4 +1,4 @@
-name: "Hello world"
+name: "Hello world ingress"
 description: "My first real add-on!"
 version: "1.1.0"
 slug: "hello_world"
@@ -12,11 +12,11 @@ arch:
 startup: services
 # webui: http://[HOST]:[PORT:2839]/dashboard
 ingress: true
-ingress_port: 8000
-ingress_entry: http://localhost:8000/
-host_network: true
-ports:
-  8000/tcp: 8000
+# ingress_port: 8000
+# ingress_entry: http://localhost:8000/
+# host_network: true
+# ports:
+#   8000/tcp: 8000
 #stage: stable, experimental or deprecated
 #advanced: Set this to true to require the user to have enabled "Advanced" mode for it to show. -> AKO stage NIJE stable
 #OPCIJE ZA POSTAVLJANJE ADD-ON U LIJEVI PANEL

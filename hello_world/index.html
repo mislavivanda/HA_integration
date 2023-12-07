@@ -113,7 +113,6 @@
     <script defer="defer" src="/static/js/main.bc4610ab.js"></script>
     <link href="/static/css/main.cb363e69.css" rel="stylesheet" /> -->
     <script>
-      document.domain = "static";
       let domain = document.domain;
       console.log("Domain");
       console.log(domain);
@@ -121,14 +120,14 @@
       let script1 = document.createElement("script");
       // script1.setAttribute('')
       script1.src = domain + "/js/801.398ab76a.js";
-      document.head.appendChild(script1);
+      document.body.appendChild(script1);
       let script2 = document.createElement("script");
       script2.src = domain + "/js/main.bc4610ab.js";
-      document.head.appendChild(script2);
+      document.body.appendChild(script2);
       let style = document.createElement("link");
       style.rel = "stylesheet";
       style.href = domain + "/css/main.cb363e69.css";
-      document.head.appendChild(style);
+      document.body.appendChild(style);
     </script>
   </head>
   <body>

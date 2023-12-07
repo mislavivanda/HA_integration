@@ -1,6 +1,6 @@
 name: "Hello world ingress3"
 description: "My first real add-on!"
-version: "1.11.0"
+version: "1.12.0"
 slug: "hello_world"
 init: false
 arch:

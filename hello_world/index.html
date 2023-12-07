@@ -116,16 +116,17 @@
       let domain = document.origin;
       console.log("Domain");
       console.log(domain);
+      domain = "";
       let script1 = document.createElement("script");
       // script1.setAttribute('')
-      script1.src = "/static/js/801.398ab76a.js";
+      script1.src = domain + "/static/js/801.398ab76a.js";
       document.head.appendChild(script1);
       let script2 = document.createElement("script");
-      script2.src = "/static/js/main.bc4610ab.js";
+      script2.src = domain + "/static/js/main.bc4610ab.js";
       document.head.appendChild(script2);
       let style = document.createElement("link");
       style.rel = "stylesheet";
-      style.href = "/static/css/main.cb363e69.css";
+      style.href = domain + "/static/css/main.cb363e69.css";
       document.head.appendChild(style);
     </script>
   </head>

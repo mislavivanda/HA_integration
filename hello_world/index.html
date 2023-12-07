@@ -113,7 +113,9 @@
     <script defer="defer" src="/static/js/main.bc4610ab.js"></script>
     <link href="/static/css/main.cb363e69.css" rel="stylesheet" /> -->
     <script>
-      let domain = document.domain;
+      let domain = document.origin;
+      console.log("Domain");
+      console.log(domain);
       let script1 = document.createElement("script");
       // script1.setAttribute('')
       script1.src = domain + "/static/js/801.398ab76a.js";

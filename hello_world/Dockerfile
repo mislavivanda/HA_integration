@@ -12,7 +12,7 @@ RUN \
 
 COPY ingress.conf /etc/nginx/http.d/
 
-COPY . /usr/share/nginx/html
+COPY . /build
 
 #Launch nginx with debug options.
 CMD [ "nginx","-g","daemon off;error_log /dev/stdout debug;" ]

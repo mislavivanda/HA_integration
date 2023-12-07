@@ -106,12 +106,23 @@
           })();
       })();
     </script>
-    <script
+    <!-- <script
       defer="defer"
       src="{{document.domain + '/static/js/801.398ab76a.js'}}"
     ></script>
     <script defer="defer" src="/static/js/main.bc4610ab.js"></script>
-    <link href="/static/css/main.cb363e69.css" rel="stylesheet" />
+    <link href="/static/css/main.cb363e69.css" rel="stylesheet" /> -->
+    <script>
+      let domain = document.domain;
+      let script1 = document.createElement("script");
+      // script1.setAttribute('')
+      script1.src = domain + "/static/js/801.398ab76a.js";
+      let script2 = document.createElement("script");
+      script2.src = domain + "/static/js/main.bc4610ab.js";
+      let style = document.createElement("link");
+      style.rel = "stylesheet";
+      style.href = domain + "/static/css/main.cb363e69.css";
+    </script>
   </head>
   <body>
     <noscript>Please enable JavaScript in your browser.</noscript>

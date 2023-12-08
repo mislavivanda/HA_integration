@@ -10,5 +10,6 @@ arch:
   - armv7
   - i386
 startup: services
+webui: http://[HOST]:[8000:2839]/dashboard
 ports:
   8000/tcp: 8000

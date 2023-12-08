@@ -6,8 +6,8 @@
       "use strict";
       var s = i(537),
         n = i(336);
-      const o = document.URL + "static/media/logo-text@2x.23f596ec.png",
-        a = document.URL + "static/media/logo-text.23f596ec.png",
+      const o = i.p + "static/media/logo-text@2x.23f596ec.png",
+        a = i.p + "static/media/logo-text.23f596ec.png",
         r = { default: o, retina: a };
       var l = i(6226),
         h = i.n(l);
@@ -20,7 +20,7 @@
         })(),
       };
       const c = (t) => d[t],
-        m = document.URL + "static/media/http-error.cf84c924.png";
+        m = i.p + "static/media/http-error.cf84c924.png";
       var u = i(683),
         g = i(1317);
       const A = h().default.create({
@@ -4642,8 +4642,8 @@
       }
       const Ri = ji;
       var Mi = i(9211);
-      const Bi = document.URL + "static/media/nunito_normal.d15a0271.ttf",
-        Di = document.URL + "static/media/nunito_bold.57622024.ttf";
+      const Bi = i.p + "static/media/nunito_normal.d15a0271.ttf",
+        Di = i.p + "static/media/nunito_bold.57622024.ttf";
       Mi.Zx.register({
         family: "Nunito",
         fonts: [
@@ -19357,7 +19357,7 @@
       const Ca = fa;
       function ba() {
         return new Worker(
-          document.URL + "static/js/generateHeatmapWebWorker.ad2eb9b8.worker.js"
+          i.p + "static/js/generateHeatmapWebWorker.ad2eb9b8.worker.js"
         );
       }
       var ya = i(1317);

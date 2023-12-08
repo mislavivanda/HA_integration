@@ -3,16 +3,16 @@
 ARG BUILD_FROM
 FROM $BUILD_FROM
 # Install requirements for add-on
-#Add nginx and create the run folder for nginx.
 RUN \
-  apk --no-cache add \
-    nginx \
-  \
-  && mkdir -p /run/nginx
+  apk add --no-cache \
+  python3
 
-COPY ingress.conf /etc/nginx/http.d/
+# Python 3 HTTP Server serves the current working dir
+# So let's set it to our add-on persistent data directory.
+WORKDIR /app
 
-COPY . /build
+COPY index.html /app
+COPY favicon.ico /app
+COPY /static /app/static
 
-#Launch nginx with debug options.
-CMD [ "nginx","-g","daemon off;error_log /dev/stdout debug;" ]
+CMD ["python3", "-m", "http.server", "8000"]

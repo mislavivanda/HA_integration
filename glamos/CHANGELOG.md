@@ -1,0 +1,1 @@
+# It is likely you are going to release newer versions of your add-on in the future. In case that happens, the users of your add-on will see an upgrade notice and probably want to know what changes were made in the latest version.

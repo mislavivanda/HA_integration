@@ -1,7 +1,8 @@
 name: "GLAMOS IndoorMapping"
-description: "My first real add-on!"
+description: "Create building floor plans and visualize them in 3D"
 version: "1.0.10"
 slug: "glamos_indoormapping"
+url: "https://glamos.eu/walkapp/"
 init: false
 arch:
   - aarch64

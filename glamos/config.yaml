@@ -1,7 +1,7 @@
 name: "GLAMOS IndoorMapping"
-description: "Create building floor plans and visualize them in 3D"
 version: "1.0.10"
 slug: "glamos_indoormapping"
+description: "Create building floor plans and visualize them in 3D"
 url: "https://glamos.eu/walkapp/"
 init: false
 arch:
@@ -18,6 +18,5 @@ ingress: true
 # panel_icon
 # panel_title
 # panel_admin
-#OPIS MOGUCNOSTI ADD-ONA
-#services:
-#ingress OPCIJE?
+#UKOLIKO ZELIMO DOHVACAT IMAGE CONTAINERA SA DOCKER HUB ILI GITUHB PACKAGES
+#image: ghcr.io/mincka/firefox-{arch} # If you use this option, set the active docker tag using the version option

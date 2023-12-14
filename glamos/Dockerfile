@@ -10,5 +10,7 @@ RUN \
 
 COPY ingress.conf /etc/nginx/http.d/
 COPY . /build
+COPY run.sh /
+RUN chmod a+x /run.sh
 
-CMD [ "nginx","-g","daemon off;error_log /dev/stdout debug;" ]
+CMD /run.sh

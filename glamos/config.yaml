@@ -12,6 +12,10 @@ arch:
   - i386
 startup: services
 ingress: true
+options:
+  ha_port: null
+schema:
+  ha_port: int
 #stage: stable, experimental or deprecated
 #advanced: Set this to true to require the user to have enabled "Advanced" mode for it to show. -> AKO stage NIJE stable
 #OPCIJE ZA POSTAVLJANJE ADD-ON U LIJEVI PANEL

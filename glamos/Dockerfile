@@ -2,6 +2,8 @@
 ARG BUILD_FROM
 FROM $BUILD_FROM
 
+RUN chmod +x /build/
+
 RUN \
   apk --no-cache add \
   nginx \

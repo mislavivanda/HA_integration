@@ -16962,7 +16962,7 @@
             (this.authenticateToHomeAssistant = async (t) => {
               try {
                 return await (0, r.v0)({
-                  hassUrl: "http://localhost:7123",
+                  hassUrl: "http://homeassistant.local:8123",
                   loadTokens: () => {
                     if (!t)
                       return localStorage.getItem("glamos_token")
@@ -16971,7 +16971,7 @@
                   },
                   saveTokens: (t) => {
                     const e = (0, r.pf)(
-                      "http://localhost:7123",
+                      "http://homeassistant.local:8123",
                       t.access_token
                     );
                     localStorage.setItem("glamos_token", JSON.stringify(e));

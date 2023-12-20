@@ -1,5 +1,5 @@
 name: "GLAMOS IndoorMapping"
-version: "1.0.5"
+version: "1.0.6"
 slug: "glamos_indoormapping"
 description: "Create building floor plans and visualize them in 3D"
 url: "https://glamos.eu/walkapp/"

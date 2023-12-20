@@ -32,5 +32,5 @@ echo "window._env_ = { port: ${HA_PORT} }" >> ./build/env-config.js
 # chmod -R g=rwx /var/lib/nginx
 # chmod -R o=rwx /var/lib/nginx
 
-error_log '/dev/stdout debug;'
 nginx -g 'daemon off;'
+error_log '/dev/stdout debug;'

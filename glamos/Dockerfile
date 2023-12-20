@@ -8,6 +8,10 @@ RUN \
   \
   && mkdir -p /run/nginx
 
+# RUN apk add --no-cache su-exec
+# RUN apk add --no-cache dmidecode
+# RUN apk add --no-cache lshw
+
 COPY ingress.conf /etc/nginx/http.d/
 COPY . /build
 COPY run.sh /

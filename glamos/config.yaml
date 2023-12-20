@@ -1,5 +1,5 @@
 name: "GLAMOS IndoorMapping"
-version: "1.0.1"
+version: "1.0.3"
 slug: "glamos_indoormapping"
 description: "Create building floor plans and visualize them in 3D"
 url: "https://glamos.eu/walkapp/"
@@ -12,10 +12,25 @@ arch:
   - i386
 startup: services
 ingress: true
-options:
-  ha_port: null
-schema:
-  ha_port: int
+# privileged:
+#   - BPF
+#   - DAC_READ_SEARCH
+#   - IPC_LOCK
+#   - NET_ADMIN
+#   - NET_RAW
+#   - PERFMON
+#   - SYS_ADMIN
+#   - SYS_MODULE
+#   - SYS_NICE
+#   - SYS_PTRACE
+#   - SYS_RAWIO
+#   - SYS_RESOURCE
+#   - SYS_TIME
+# full_access: true
+# options:
+#   ha_port: 7123
+# schema:
+#   ha_port: int
 #stage: stable, experimental or deprecated
 #advanced: Set this to true to require the user to have enabled "Advanced" mode for it to show. -> AKO stage NIJE stable
 #OPCIJE ZA POSTAVLJANJE ADD-ON U LIJEVI PANEL

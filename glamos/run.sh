@@ -28,9 +28,9 @@ rm -rf ./build/env-config.js
 touch ./build/env-config.js
 echo "window._env_ = { port: ${HA_PORT} }" >> ./build/env-config.js
 
-sudo chmod -R u=rwx /var/lib/nginx
-sudo chmod -R g=rwx /var/lib/nginx
-sudo chmod -R o=rwx /var/lib/nginx
+chmod -R u=rwx /var/lib/nginx
+chmod -R g=rwx /var/lib/nginx
+chmod -R o=rwx /var/lib/nginx
 
 nginx -g 'daemon off;'
 error_log '/dev/stdout debug;'

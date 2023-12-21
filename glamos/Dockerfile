@@ -23,7 +23,7 @@ RUN chmod a+x /run.sh
 #   && chown -R root:root /var/lib/nginx /var/lib/nginx/tmp/client_body /var/lib/nginx/logs /var/log/nginx \
 #   && chmod -R 775 /var/lib/nginx /var/lib/nginx/tmp/client_body /var/lib/nginx/logs /var/log/nginx
 
-RUN mkdir -p /var/lib/nginx/tmp/client_body /var/lib/nginx/tmp/proxy /var/lib/nginx/logs /var/log/nginx \
+RUN mkdir -p /var/lib/nginx/tmp/client_body /var/lib/nginx/tmp/proxy /var/lib/nginx/tmp/fastcgi /var/lib/nginx/tmp/uwsgi /var/lib/nginx/tmp/scgi /var/lib/nginx/logs /var/log/nginx \
   && chown -R root:root /var/lib/nginx /var/lib/nginx/logs /var/log/nginx \
   && chmod -R 775 /var/lib/nginx /var/lib/nginx/logs /var/log/nginx
 

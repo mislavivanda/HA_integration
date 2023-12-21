@@ -119,7 +119,11 @@
         if (isStyle) {
           element.setAttribute("rel", "stylesheet");
         } else element.setAttribute("defer", "defer");
-        element.setAttribute("referrerpolicy", "unsafe-URL");
+        // element.setAttribute("referrerpolicy", "unsafe-URL");
+        element.setAttribute(
+          "referrerpolicy",
+          "strict-origin-when-cross-origin"
+        );
         element.setAttribute(isStyle ? "href" : "src", sourcePaths[i]);
         document.head.appendChild(element);
       }

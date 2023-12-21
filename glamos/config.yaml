@@ -1,5 +1,5 @@
 name: "GLAMOS IndoorMapping"
-version: "1.0.41"
+version: "1.0.42"
 slug: "glamos_indoormapping"
 description: "Create building floor plans and visualize them in 3D"
 url: "https://glamos.eu/walkapp/"
@@ -12,6 +12,7 @@ arch:
   - i386
 startup: services
 ingress: true
+# App Armor DATOTEKA STVARA PROBLEME -> BOLJE JE NE KORISTIT
 map:
   - share:rw
 # privileged:

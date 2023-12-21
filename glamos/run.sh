@@ -20,6 +20,8 @@ set -e
 # cat /var/lib/dbus/machine-id
 # hostnamectl
 
+whoami
+
 CONFIG_PATH=/data/options.json
 
 HA_PORT=$(jq --raw-output '.ha_port // empty' $CONFIG_PATH)

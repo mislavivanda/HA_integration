@@ -29,5 +29,6 @@ RUN mkdir -p /var/lib/nginx/tmp/client_body /var/lib/nginx/tmp/proxy /var/lib/ng
 
 RUN chown -R nginx:nginx /var/lib/nginx/tmp \
   && chmod -R 775 /var/lib/nginx/tmp
+RUN chmod -R 777 /run/nginx
 # CMD [ "nginx","-g","daemon off;" ]
 CMD /run.sh

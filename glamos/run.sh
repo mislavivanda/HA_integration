@@ -20,6 +20,7 @@ set -e
 # cat /var/lib/dbus/machine-id
 # hostnamectl
 
+cat /etc/passwd
 ls -la /var/lib/nginx
 ls -la /var/lib/nginx/tmp
 echo "Ls logs"

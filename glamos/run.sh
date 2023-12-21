@@ -22,6 +22,8 @@ set -e
 
 whoami
 
+ls -la /var/lib/nginx/tmp /var/lib/nginx/logs
+
 CONFIG_PATH=/data/options.json
 
 HA_PORT=$(jq --raw-output '.ha_port // empty' $CONFIG_PATH)

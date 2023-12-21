@@ -16,8 +16,11 @@ COPY ingress.conf /etc/nginx/http.d/
 COPY . /build
 COPY run.sh /
 RUN chmod a+x /run.sh
-RUN chmod 0775 /var/lib/nginx
-RUN chmod 0775 /var/lib/nginx/tmp
+# RUN chmod 0775 /var/lib/nginx
+# RUN chmod 0775 /var/lib/nginx/tmp
+RUN mkdir -p /var/lib/nginx/tmp /var/log/nginx \
+  && chmod -R 755 /var/lib/nginx /var/log/nginx
+
 
 CMD [ "nginx","-g","daemon off;" ]
 # CMD /run.sh

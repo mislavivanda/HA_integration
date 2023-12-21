@@ -20,7 +20,7 @@ set -e
 # cat /var/lib/dbus/machine-id
 # hostnamectl
 
-cat /etc/nginx/nginx.conf
+# cat /etc/nginx/nginx.conf
 ls -la /var/lib/nginx
 ls -la /var/lib/nginx/tmp
 ls -la /var/lib/nginx/logs

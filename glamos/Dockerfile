@@ -25,4 +25,5 @@ RUN mkdir -p /var/lib/nginx/tmp/client_body /var/lib/nginx/logs
 
 
 # CMD [ "nginx","-g","daemon off;" ]
-CMD /run.sh
+CMD whoami
+# CMD /run.sh

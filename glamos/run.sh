@@ -20,7 +20,9 @@ set -e
 # cat /var/lib/dbus/machine-id
 # hostnamectl
 
-ls -la /var/lib
+ls -la /var/lib/nginx
+ls -la /var/lib/nginx/tmp
+ls -la /var/lib/nginx/logs
 
 CONFIG_PATH=/data/options.json
 

@@ -1,5 +1,5 @@
 name: "GLAMOS IndoorMapping"
-version: "1.0.39"
+version: "1.0.40"
 slug: "glamos_indoormapping"
 description: "Create building floor plans and visualize them in 3D"
 url: "https://glamos.eu/walkapp/"
@@ -14,12 +14,7 @@ startup: services
 ingress: true
 apparmor: false
 map:
-  - all_addon_configs:rw
-  - backup:rw
-  - homeassistant_config:rw
-  - media:rw
   - share:rw
-  - ssl:rw
 # privileged:
 #   - BPF
 #   - DAC_READ_SEARCH
